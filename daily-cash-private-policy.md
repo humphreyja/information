@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Cash: Daily'
+title: 'Cash: Daily - Privacy Policy'
 permalink: /cash-daily-privacy-policy/
 ---
 
