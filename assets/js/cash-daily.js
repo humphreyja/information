@@ -2,10 +2,10 @@ $( document ).ready(function() {
   var recurring = false;
   $('.recurring-details-button').click(function() {
     if (recurring) {
-      $('.recurring-details').fadeTo('slow', 0);
+      $('.recurring-details').fadeOut();
       recurring = false;
     } else {
-      $('.recurring-details').fadeTo('slow', 1);
+      $('.recurring-details').fadeIn();
       recurring = true;
     }
   });
@@ -13,10 +13,10 @@ $( document ).ready(function() {
   var customizable = false;
   $('.highly-customizable-details-button').click(function() {
     if (customizable) {
-      $('.highly-customizable-details').fadeTo('slow', 0);
+      $('.highly-customizable-details').fadeOut();
       customizable = false;
     } else {
-      $('.highly-customizable-details').fadeTo('slow', 1);
+      $('.highly-customizable-details').fadeIn();
       customizable = true;
     }
   });
@@ -24,10 +24,10 @@ $( document ).ready(function() {
   var daily = false;
   $('.daily-details-button').click(function() {
     if (daily) {
-      $('.daily-details').fadeTo('slow', 0);
+      $('.daily-details').fadeOut();
       daily = false;
     } else {
-      $('.daily-details').fadeTo('slow', 1);
+      $('.daily-details').fadeIn();
       daily = true;
     }
   });
@@ -35,10 +35,10 @@ $( document ).ready(function() {
   var scenarios = false;
   $('.scenarios-details-button').click(function() {
     if (scenarios) {
-      $('.scenarios-details').fadeTo('slow', 0);
+      $('.scenarios-details').fadeOut();
       scenarios = false;
     } else {
-      $('.scenarios-details').fadeTo('slow', 1);
+      $('.scenarios-details').fadeIn();
       scenarios = true;
     }
   });
