@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <script src="{{ site.baseurl }}{{ "/assets/js/skrollr.js" }}"></script>
+  {%- include head.html -%}
+
+  <body class="layout-full">
+    <main>
+      <div>
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include full-footer.html -%}
+
+  </body>
+
+</html>

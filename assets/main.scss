@@ -2,4 +2,238 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('{{ site.baseurl }}{{ '/assets/Comfortaa-Regular.ttf'}}');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('{{ site.baseurl }}{{ '/assets/Comfortaa-Bold.ttf'}}');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('{{ site.baseurl }}{{ '/assets/OpenSans-Regular.ttf'}}');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('{{ site.baseurl }}{{ '/assets/OpenSans-Bold.ttf'}}');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @import "minima";
+@import "bootstrap/bootstrap-grid";
+
+main {
+  height: 100%;
+
+  & > div {
+    height: 100%;
+
+    & > div {
+      height: 100%;
+    }
+  }
+}
+
+.shadow {
+  box-shadow: 1px 2px 30px -4px black;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mt--3 {
+  margin-top: -1rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-muted {
+  color: #888;
+}
+
+.bg-black {
+  background: black;
+}
+
+.rounded {
+  border-radius: 6px;
+}
+
+.btn {
+  color: #1f7bf4;
+  background: transparent;
+  border: 0;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 5px 0;
+
+  &.btn-white {
+    background: white;
+    color: #4A8334;
+    padding: 5px 8px;
+  }
+}
+
+.arrow-scroll {
+  border-radius: 6px;
+  padding: 10px;
+  background: rgba(0,0,0,0.3);
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.angled {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+.cash-daily {
+  font-family: 'OpenSans';
+  h1, h2 {
+    font-family: 'Comfortaa';
+  }
+
+  @include media-breakpoint-up(lg) {
+    .justify-content-end-lg {
+      justify-content: flex-end !important;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .align-center-mobile-md {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .items {
+    color: #555;
+  }
+
+  .details {
+    background: rgba(0,0,0,0.1);
+    border-radius: 6px;
+    padding: 10px;
+    margin-top: 10px;
+    opacity: 0;
+  }
+
+  .welcome-container {
+    background-attachment: fixed;
+  }
+  .welcome {
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .hero {
+    background: url('{{ site.baseurl }}{{ '/assets/hero-background.png'}}') no-repeat center center;
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+    margin-bottom: -15%;
+
+    h1 {
+      font-size: 4.7rem;
+      font-weight: lighter;
+      text-shadow: 3px 3px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      font-size: 2rem;
+      text-shadow: 3px 3px rgba(0,0,0,0.2);
+    }
+  }
+
+  &.texture,
+  .texture {
+    background: url('{{ site.baseurl }}{{ '/assets/texture.png'}}');
+  }
+
+  .hero-spacer {
+    margin-top: 15%;
+  }
+
+  .content {
+    h2 {
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    &.green {
+      background: linear-gradient(#74AB5E, #3D6E27);
+      color: white;
+    }
+
+    h5 {
+      font-weight: normal;
+      opacity: 0.9;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+
+.layout-full {
+
+  .full.site-footer {
+    padding: 10px;
+    background: white;
+    z-index: 1;
+  }
+
+  .full.page-link {
+    color: inherit;
+  }
+}
