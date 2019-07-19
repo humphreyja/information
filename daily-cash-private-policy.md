@@ -1,3 +1,9 @@
+---
+layout: page
+title: 'Cash: Daily'
+permalink: /cash-daily-privacy-policy/
+---
+
 # Cash: Daily
 
 ### Privacy Policy
