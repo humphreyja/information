@@ -132,12 +132,13 @@ main {
   overflow: hidden;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  bottom: 15%;
+  bottom: 5%;
   right: 0;
   left: 0;
   margin: auto;
   width: 160px;
   opacity: 1;
+  z-index: 100;
 }
 
 .angled {
@@ -165,10 +166,6 @@ main {
 
     .text-md-smaller {
       font-size: 0.7rem !important;
-    }
-
-    .arrow-scroll {
-      bottom: 25% !important;
     }
   }
 
