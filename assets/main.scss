@@ -156,7 +156,12 @@ main {
       display: flex;
       justify-content: center;
     }
+
+    .text-md-smaller {
+      font-size: 3.5rem !important;
+    }
   }
+
 
   .items {
     color: #555;
